@@ -14,7 +14,6 @@ import com.google.android.material.snackbar.Snackbar
 /**
  * A fragment that render and process an insertion form.
  */
-@Suppress("DEPRECATION")
 class ContactAddFragment : Fragment() {
     private lateinit var binding: FragmentContactAddBinding
     private val viewModel: MainViewModel by activityViewModels()
@@ -33,7 +32,6 @@ class ContactAddFragment : Fragment() {
         return binding.root
     }
 
-    @Deprecated("Deprecated in Java", ReplaceWith("inflater.inflate(R.menu.menu_add, menu)"))
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_add, menu)
     }
@@ -68,7 +66,6 @@ class ContactAddFragment : Fragment() {
         viewModel.isLoading.value = false
     }
 
-    @Deprecated("Deprecated in Java")
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_save -> {
