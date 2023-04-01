@@ -109,6 +109,4 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             emit(IdResult(null, Status.Error(Exception("Failed to add contact", e))))
         }
     }
-
-
 }

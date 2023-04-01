@@ -7,6 +7,7 @@ plugins {
 }
 
 android {
+    namespace "br.edu.ufabc.listacontatosclient"
     compileSdk 33
 
     defaultConfig {
@@ -34,6 +35,9 @@ android {
     }
     buildFeatures {
         viewBinding true
+    }
+    lintOptions {
+        warningsAsErrors true
     }
 }
 
